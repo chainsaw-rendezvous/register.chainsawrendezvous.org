@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title="Rendezvous Registration">
@@ -11,3 +11,33 @@ import Layout from '../layouts/Layout.astro';
 		<a href="https://chainsawrendezvous.org" class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Rendezvous Website</a>
 	</main>
 </Layout>
+<style>
+	:root {
+    --accent: rgb(178,178,178);
+	}
+	html {
+		background-color: #F6F6F6;
+		font-family: 'Open Sans Condensed',Helvetica,sans-serif;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 100ch;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid var(--accent);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	main form.cog-form {
+		margin: 0;
+	}
+</style>

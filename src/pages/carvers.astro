@@ -1,13 +1,42 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title="Rendezvous Carver Registration">
 	<main>
 		<h1>Chainsaw Carvers Rendezvous</h1>
 		<div class="instructions">
-			<h2>Carver Registration</h2>
 			<script src="https://www.cognitoforms.com/f/seamless.js" data-key="4q9mfMXzs0yQEnbPXq3vcA" data-form="10"></script>
 		</div>
 	</main>
 </Layout>
+<style>
+	:root {
+    --accent: rgb(178,178,178);
+	}
+	html {
+		background-color: #F6F6F6;
+		font-family: 'Open Sans Condensed',Helvetica,sans-serif;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 100ch;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid var(--accent);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	main form.cog-form {
+		margin: 0;
+	}
+</style>

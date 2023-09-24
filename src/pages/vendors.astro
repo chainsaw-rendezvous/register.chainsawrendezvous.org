@@ -1,5 +1,6 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../layouts/Layout.astro'
+
 ---
 
 <Layout title="Rendezvous Vendor Registration">
@@ -14,10 +15,22 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
+	:root {
+    --accent: rgb(178,178,178);
+	}
+	html {
+		background-color: #F6F6F6;
+		font-family: 'Open Sans Condensed',Helvetica,sans-serif;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
 	main {
 		margin: auto;
 		padding: 1.5rem;
-		max-width: 140ch;
+		max-width: 100ch;
 	}
 	.instructions {
 		line-height: 1.6;
@@ -27,4 +40,8 @@ import Layout from '../layouts/Layout.astro';
 		padding: 1rem;
 		border-radius: 0.4rem;
 	}
+	main form.cog-form {
+		margin: 0;
+	}
 </style>
+
