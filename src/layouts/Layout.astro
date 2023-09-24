@@ -3,8 +3,9 @@ export interface Props {
 	title: string;
 }
 
-const { title } = Astro.props;
-import '../styles/base.css';
+const { title } = Astro.props
+import '../styles/base.css'
+import '../components/globalStyles.astro'
 ---
 
 <!DOCTYPE html>
@@ -19,17 +20,3 @@ import '../styles/base.css';
 		<slot />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: rgb(178,178,178);
-	}
-	html {
-		background-color: #F6F6F6;
-		font-family: 'Open Sans Condensed',Helvetica,sans-serif;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-</style>
